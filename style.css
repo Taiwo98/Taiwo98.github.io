@@ -1,0 +1,463 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+/*----------Navigation--------*/
+
+
+ #nav-bar{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+.navbar-brand img{
+    height: 40px;
+    padding-left: 30px;
+}
+nav-bar-nav li{
+    padding: 0 10px;
+}
+.navbar-nav li a{
+    float: right;
+    text-align: left;
+}
+
+#nav-bar ul li a:hover{
+    color: #007bff! important;
+}
+
+.navbar{
+    background-color: #fff;
+}
+.navbar-toggler{
+    border: none! important;
+}
+
+.navbar-link{
+    color: #555! important;
+    font-weight: 600;
+    font-size: 20px;
+}
+/*------Slider------*/
+#slider{
+    width: 100%;
+}
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial! important;
+}
+.carousel-caption h5{
+    color: rgb(82, 5, 41);
+    font-size: 30px;
+    text-align: center;
+}
+
+/*****About******/
+#about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left:20px;
+    color: #555;
+    background-color: rgb(253, 245, 245);
+}
+
+#about .btn{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.about-content{
+    padding-top: 20px;
+    padding-right: 80px;
+}
+
+.skills-bar p{
+ margin-bottom: 6px;
+ font-weight: 100;
+ padding-right: 15px;
+}
+
+.progress-bar{
+    border-radius: 17px;
+}
+
+.progress{
+    border-radius: 17px !important;
+    margin-bottom: 20px;
+}
+
+/*--------------Services------*/
+#services{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(images/img15.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: #efefef !important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#services h1::after {
+    content: '';
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 150px;
+    margin: 15px auto 5px;
+}
+
+.services{
+    margin-top: 30px;
+}
+
+.icon{
+    font-size: 35px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 85px;
+    border: 3px solid rgb(57, 150, 113);
+    border-radius: 60%;
+}
+
+#services p{
+    font-size: 18px;
+    margin-top: 20px;
+    color: #ccc;
+}
+
+.services .col-md-3:hover{
+    background: #073347;
+    cursor: pointer;
+    transition: 0.8s;
+}
+/*---------Get In Touch---------*/
+#contact{
+    background: #efefef;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: rgb(119, 116, 116);
+}
+
+.contact-form{
+    padding: 15px;
+}
+
+.form-control{
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+::placeholder{
+    color: #999 !important;
+}
+
+.follow{
+    background: #fff;
+    margin: 15px;
+    padding: 10px;
+}
+
+.contact-info .fa{
+    margin: 10px;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*-------------Footer---------*/
+
+#footer{
+    background: rgb(29, 218, 161);
+    color: #fff;
+    padding: 12px;
+}
+
+.container text-center p{
+    color: rgb(33, 33, 141);
+}
+/*-------------Text Writing--------*/
+
+h4{      
+    animation: type 3s steps(13);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0px solid white;
+    width: 13ch;
+}
+@keyframes type {
+    0% {
+    width: 0ch;
+    }
+    100% {
+        width: 13ch;
+    }
+}
+
+
+h5{
+    animation: type 2s steps(18);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0px solid white;
+    width: 17ch;
+}
+@keyframes type {
+    0% {
+    width: 0ch;
+    }
+    100% {
+        width: 17ch;
+    }
+}
+
+/*---------Animation SlideUp for About Section--------*/
+#object{
+    background-color: rgb(253, 245, 245);
+    visibility: hidden;
+}
+.slideUp{
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+    visibility: visible !important;
+}
+
+@keyframes slideUp{
+    0%{
+        -webkit-transform: translateY(100%);
+    }
+    50%{
+        -webkit-transform: translateY(-8%);
+    }
+    65%{
+        -webkit-transform: translateY(4%);
+    }
+    80%{
+        -webkit-transform: translateY(-4%);
+    }
+    95%{
+        -webkit-transform: translateY(2%);
+    }
+    100%{
+        -webkit-transform: translateY(0%);
+    }
+}
+    /*--Slide Up for h6 ---*/
+h6{
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+    visibility: visible !important;
+    
+}
+
+.carousel-caption h6{
+    color: rgb(82, 5, 41);
+    font-size: 35px;
+    text-align: center;
+}
+
+
+@keyframes h6{
+    0%{
+        -webkit-transform: translateY(100%);
+    }
+    50%{
+        -webkit-transform: translateY(-8%);
+    }
+    65%{
+        -webkit-transform: translateY(4%);
+    }
+    80%{
+        -webkit-transform: translateY(-4%);
+    }
+    95%{
+        -webkit-transform: translateY(2%);
+    }
+    100%{
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes h6{
+        0%{
+            -webkit-transform: translateY(100%);
+        }
+        50%{
+            -webkit-transform: translateY(-8%);
+        }
+        65%{
+            -webkit-transform: translateY(4%);
+        }
+        80%{
+            -webkit-transform: translateY(-4%);
+        }
+        95%{
+            -webkit-transform: translateY(2%);
+        }
+        100%{
+            -webkit-transform: translateY(0%);
+        }
+}
+
+/*----Animation FadeIn for Services section-----*/
+.fadeIn{
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible  !important;
+}
+
+@keyframes fadeIn{
+    0%{
+        transform: scale(0);
+        opacity: 0.0;
+    }
+    60%{
+        transform: scale(1.1);
+    }
+    80%{
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeIn{
+    0%{
+        -webkit-transform: scale(0);
+        opacity: 0.0;
+    }
+    60%{
+        -webkit-transform: scale(1.1);
+    }
+    80%{
+        -webkit-transform: scale(0.9);
+        opacity: 1;
+    }
+    100%{
+        -webkit-transform: scale(1);
+        opacity: 0;
+    }
+}
+
+/*---Animation slideExpandUp for contact section-----*/
+
+.slideExpandUp{
+    animation-name: slideExpandUp;
+    -webkit-animation-name: slideExpandUp;
+    animation-duration: 1.6s;
+    -webkit-animation-duration: 1.6s;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+    visibility: visible  !important;
+}
+
+@keyframes slideExpandUp{
+    0%{
+        transform: translateY(100%)scaleX(0.5);
+    }
+    30%{
+        transform: translateY(-8%)scaleX(0.5);
+    }
+    40%{
+        transform: translateY(2%)scaleX(0.5);
+    }
+    50%{
+        transform: translateY(0%)scaleX(1.1);
+    }
+    60%{
+        transform: translateY(0%)scaleX(0.9);
+    }
+    70%{
+        transform: translateY(0%)scaleX(1.05);
+    }
+    80%{
+        transform: translateY(0%)scaleX(0.95);
+    }
+    90%{
+        transform: translateY(0%)scaleX(1.02);
+    }
+    100%{
+        transform: translateY(0%)scaleX(1);
+    }
+}
+
+@-webkit-keyframes slideExpandUp{
+    0%{
+        -webkit-transform: translateY(100%)scaleX(0.5);
+    }
+    30%{
+        -webkit-transform: translateY(-8%)scaleX(0.5);
+    }
+    40%{
+        -webkit-transform: translateY(2%)scaleX(0.5);
+    }
+    50%{
+        -webkit-transform: translateY(0%)scaleX(1.1);
+    }
+    60%{
+        -webkit-transform: translateY(0%)scaleX(0.9);
+    }
+    70%{
+        -webkit-transform: translateY(0%)scaleX(1.05);
+    }
+    80%{
+        -webkit-transform: translateY(0%)scaleX(0.95);
+    }
+    90%{
+        -webkit-transform: translateY(0%)scaleX(1.02);
+    }
+    100%{
+        -webkit-transform: translateY(0%)scaleX(1);
+    }
+}
+ /*------My Resume-------*/
+.resume{
+    border: 1px outset;
+    margin: 15px;
+    max-width: 24ch;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    margin-left: 2px;
+    background-color: lightblue;
+    text-decoration: none;
+    color: #5a9941;
+    font-size: 18px;
+}
+
+.resume a{
+    color: rgb(0, 53, 48);
+    padding-left: 8px;
+}
+.resume :hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+/*-------Skills-----*/
+.skill{
+    border: 1px outset;
+    padding-left: 25px;
+    max-width: 15ch;
+    margin-bottom: 15px;
+    margin-top: 55px;
+    background-color: lightblue;
+    color: rgb(0, 53, 48);
+    font-size: 18px;
+}
